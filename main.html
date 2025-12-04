@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>픽셀몬스터 종합 도구</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    font-family: "Nanum Gothic", sans-serif;
+    background: #0f1115;
+    color: white;
+  }
+  header {
+    padding: 28px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    background: #14171c;
+    border-bottom: 1px solid #2a2f3a;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 20px;
+  }
+
+  .grid {
+    display: grid;
+    gap: 22px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  .card {
+    padding: 22px;
+    background: #1a1f2a;
+    border-radius: 14px;
+    border: 1px solid #313645;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    background: #212735;
+  }
+
+  .card h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+  }
+  .card p {
+    margin: 0;
+    font-size: 14px;
+    color: #c5c9d4;
+    line-height: 1.5;
+  }
+
+  footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    color: #808898;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+
+<header>픽셀몬스터 종합 툴</header>
+
+<main class="container">
+
+  <h2>도감</h2>
+  <div class="grid">
+    <div class="card" onclick="location.href='/html/index/index.html'">
+      <h3>진화도감</h3>
+      <p>각 진화 라인의 트리를 시각적으로 확인하세요.</p>
+    </div>
+
+    <div class="card" onclick="location.href='/html/item_list.html'">
+      <h3>아이템도감</h3>
+      <p>장비·진화템·상점템 등 모든 아이템 확인</p>
+    </div>
+
+    <div class="card" onclick="location.href='/html/costume_list.html'">
+      <h3>코스튬도감</h3>
+      <p>획득처, 외형, 종류 정리</p>
+    </div>
+
+    <div class="card" onclick="location.href='/html/emblem.html'">
+      <h3>엠블럼도감</h3>
+      <p>효과, 레벨, 제작 재료 등</p>
+    </div>
+
+    <div class="card" onclick="location.href='/html/awakening.html'">
+      <h3>각성몬스터 도감</h3>
+      <p>각성 재료, 스탯, 링크 이동</p>
+    </div>
+
+    <div class="card" onclick="location.href='html/codi.html'">
+      <h3>코디도감</h3>
+      <p>모든 코디 파츠 정리</p>
+    </div>
+  </div>
+
+
+  <h2 style="margin-top:40px;">계산기</h2>
+  <div class="grid">
+    <div class="card" onclick="location.href='calculator/awakening_rune.html'">
+      <h3>각성룬 계산기</h3>
+      <p>레벨·재료·확률 계산</p>
+    </div>
+
+    <div class="card" onclick="location.href='calculator/ruby.html'">
+      <h3>루비 수급 계산기</h3>
+      <p>일일 던전·이벤트 수급 분석</p>
+    </div>
+
+    <div class="card" onclick="location.href='calculator/rank_dungeon.html'">
+      <h3>랭크던전 재화 계산기</h3>
+      <p>랭크 보상·필요 재화 계산</p>
+    </div>
+
+    <div class="card" onclick="location.href='calculator/mine.html'">
+      <h3>광산 계산기</h3>
+      <p>광물 수급 / 확률 계산기</p>
+    </div>
+  </div>
+
+
+  <h2 style="margin-top:40px;">시뮬레이터/도구</h2>
+  <div class="grid">
+    <div class="card" onclick="location.href='simulator/mirror.html'">
+      <h3>거울능력 시뮬레이터</h3>
+      <p>거울 발현 확률, 스탯 계산</p>
+    </div>
+
+    <div class="card" onclick="location.href='simulator/indra.html'">
+      <h3>인드라의 번개 시뮬레이터</h3>
+      <p>피격 범위·데미지 계산</p>
+    </div>
+
+    <div class="card" onclick="location.href='simulator/chain.html'">
+      <h3>파괴의 사슬 시뮬레이터</h3>
+      <p>사슬 길이·확률 계산</p>
+    </div>
+  </div>
+
+
+  <h2 style="margin-top:40px;">공성 / 달력</h2>
+  <div class="grid">
+    <div class="card" onclick="location.href='calendar/guild.html'">
+      <h3>공성 달력</h3>
+      <p>공성 일정, 주간 보상 자동 배치</p>
+    </div>
+  </div>
+
+
+  <h2 style="margin-top:40px;">미니게임</h2>
+  <div class="grid">
+    <div class="card" onclick="location.href='minigame/pet.html'">
+      <h3>동글 펫 계산기</h3>
+      <p>던전 능력치·레벨업 확률</p>
+    </div>
+  </div>
+
+</main>
+
+
+<footer>
+  © 2025 PixelMonster Tools — Created by You
+</footer>
+
+</body>
+</html>
