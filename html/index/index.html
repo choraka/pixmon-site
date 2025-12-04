@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>픽셀몬스터 진화도감</title>
+  <link rel="stylesheet" href="/style.css" />
+
+  <!-- 폰트 연결 -->
+  <style>
+    @font-face {
+      font-family: 'BigFont';
+      src: url('../fonts/BigFont.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'SmallFont';
+      src: url('../fonts/SmallFont.ttf') format('truetype');
+    }
+  </style>
+
+  <!-- 전체 스타일 -->
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #161922;
+      --border: #2a2f3a;
+      --accent: #6ea8fe;
+      --text: #e9ecf2;
+      --muted: #9aa4ad;
+    }
+
+    /* ===== 공통 ===== */
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'SmallFont', 'Noto Sans KR', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      padding-top: 120px; /* 헤더 높이만큼 여백 확보 */
+    }
+
+    header {
+      text-align: center;
+      background: #141824;
+      color: #9cc4ff;
+      font-family: 'BigFont', sans-serif;
+      padding: 20px 0;
+      border-bottom: 1px solid #2a3246;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 20px;
+      padding-bottom: 20px;
+    }
+
+    /* ===== 카드 그리드 ===== */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 18px;
+      width: min(1000px, 90%);
+      padding: 20px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px;
+      transition: 0.25s;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card:hover {
+      border-color: var(--accent);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+      transform: translateY(-3px);
+    }
+
+    .card img {
+      width: 90px;
+      height: 90px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .card span {
+      font-family: 'SmallFont', sans-serif;
+      font-size: 1.6rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header><h1>픽셀몬스터 진화도감</h1></header>
+
+  <!-- 도감 카드 -->
+  <div class="grid">
+    <a href="ggammon.html" class="card">
+      <img src="/images/monsters/ggammon/ggammon.png" alt="깜몬">
+      <span>깜몬 라인</span>
+    </a>
+    <a href="yuramon.html" class="card">
+      <img src="/images/monsters/yuramon/yuramon.png" alt="유라몬">
+      <span>유라몬 라인</span>
+    </a>
+    <a href="nyokimon.html" class="card">
+      <img src="/images/monsters/nyokimon/nyokimon.png" alt="새싹몬">
+      <span>새싹몬 라인</span>
+    </a>
+    <a href="poyomon.html" class="card">
+      <img src="/images/monsters/poyomon/poyomon.png" alt="포요몬">
+      <span>포요몬 라인</span>
+    </a>
+    <a href="jyarimon.html" class="card">
+      <img src="/images/monsters/jyarimon/jyarimon.png" alt="쟈리몬">
+      <span>쟈리몬 라인</span>
+    </a>
+    <a href="leafmon.html" class="card">
+      <img src="/images/monsters/leafmon/leafmon.png" alt="잎새몬">
+      <span>잎새몬 라인</span>
+    </a>
+    <a href="bubbmon.html" class="card">
+      <img src="/images/monsters/bubbmon/bubbmon.png" alt="뽀글몬">
+      <span>뽀글몬 라인</span>
+    </a>
+    <a href="zerimon.html" class="card">
+      <img src="/images/monsters/zerimon/zerimon.png" alt="제리몬">
+      <span>제리몬 라인</span>
+    </a>
+    <a href="relemon.html" class="card">
+      <img src="/images/monsters/relemon/relemon.png" alt="레레몬">
+      <span>레레몬 라인</span>
+    </a>
+    <a href="puwamon.html" class="card">
+      <img src="/images/monsters/puwamon/puwamon.png" alt="푸와몬">
+      <span>푸와몬 라인</span>
+    </a>
+    <a href="metalkoromon.html" class="card">
+      <img src="/images/monsters/metalkoromon/metalkoromon.png" alt="뽈뽈몬">
+      <span>뽈뽈몬 라인</span>
+    </a>
+    <a href="punimon.html" class="card">
+      <img src="/images/monsters/punimon/punimon.png" alt="푸니몬">
+      <span>푸니몬 라인</span>
+    </a>
+    <a href="chibomon.html" class="card">
+      <img src="/images/monsters/chibomon/chibomon.png" alt="치코몬">
+      <span>치코몬 라인</span>
+    </a>
+    <a href="dodomon.html" class="card">
+      <img src="/images/monsters/dodomon/dodomon.png" alt="도도몬">
+      <span>도도몬 라인</span>
+    </a>
+    <a href="kuramon.html" class="card">
+      <img src="/images/monsters/kuramon/kuramon.png" alt="쿠라몬">
+      <span>쿠라몬 라인</span>
+    </a>
+    <a href="fufumon.html" class="card">
+      <img src="/images/monsters/fufumon/fufumon.png" alt="후후몬">
+      <span>후후몬 라인</span>
+    </a>
+    <a href="mokumon.html" class="card">
+      <img src="/images/monsters/mokumon/mokumon.png" alt="모크몬">
+      <span>모크몬 라인</span>
+    </a>
+    <a href="pichimon.html" class="card">
+      <img src="/images/monsters/pichimon/pichimon.png" alt="피치몬">
+      <span>피치몬 라인</span>
+    </a>
+    <a href="petitmon.html" class="card">
+      <img src="/images/monsters/pichimon/petitmon.png" alt="쁘띠몬">
+      <span>쁘띠몬 라인</span>
+    </a>
+    <a href="snowbotamon.html" class="card">
+      <img src="/images/monsters/snowbotamon/snowbotamon.png" alt="하얀몬">
+      <span>하얀몬 라인</span>
+    </a>
+    <a href="ketomon.html" class="card">
+      <img src="/images/monsters/ketomon/ketomon.png" alt="케토몬">
+      <span>케토몬 라인</span>
+    </a>
+    <a href="keemon.html" class="card">
+      <img src="/images/monsters/keemon/keemon.png" alt="키몬">
+      <span>키몬 라인</span>
+    </a>
+    <a href="arkadimon.html" class="card">
+      <img src="/images/monsters/arkadimon/arkadimon.png" alt="알카디몬">
+      <span>알카디몬 라인</span>
+    </a>
+    <a href="puttimon.html" class="card">
+      <img src="/images/monsters/arkadimon/puttimon.png" alt="푸티몬">
+      <span>푸티몬 라인</span>
+    </a>
+    <a href="cocomon.html" class="card">
+      <img src="/images/monsters/cocomon/cocomon.png" alt="코코몬">
+      <span>코코몬 라인</span>
+    </a>
+    <a href="spirit.html" class="card">
+      <img src="/images/monsters/uramon/spirit.png" alt="스피릿">
+      <span>스피릿 라인</span>
+    </a>
+  </div>
+
+  <footer>© 2025 PixelMonster Fan Site — 개발: 초라카</footer>
+</body>
+</html>

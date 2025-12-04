@@ -1,0 +1,83 @@
+{
+  "line": "알카디몬",
+  "monsters": [
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 유년기",
+      "image": "arkadimon/arkadimon_1.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": [],
+      "next": ["알카디몬 성장기"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 성장기",
+      "image": "arkadimon/arkadimon_2.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["알카디몬 유년기"],
+      "next": ["알카디몬 성숙기"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 성숙기",
+      "image": "arkadimon/arkadimon_3.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["알카디몬 성장기"],
+      "next": ["알카디몬 완전체"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 완전체",
+      "image": "arkadimon/arkadimon_4.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["알카디몬 성숙기"],
+      "next": ["알카디몬 궁극체"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 궁극체",
+      "image": "arkadimon/arkadimon_5.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["알카디몬 완전체"],
+      "next": ["알카디몬 초궁극체"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "알카디몬 초궁극체",
+      "image": "arkadimon/arkadimon_6.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["알카디몬 궁극체"],
+      "next": [],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    }
+  ]
+}

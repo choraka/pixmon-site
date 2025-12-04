@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>픽셀몬스터 아이템도감</title>
+<link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header><h1>픽셀몬스터 아이템도감</h1></header>
+
+  <main class="container">
+    <div class="searchbar">
+      <input type="text" id="search" placeholder="아이템 이름을 입력하세요..." />
+      <button id="filter-btn" class="filter-btn">Filter ⚙️</button>
+    </div>
+
+    <div id="filter-popup" class="filter-popup hidden">
+      <h3>필터 설정</h3>
+
+      <div class="filter-group">
+        <label>등급</label>
+        <select id="filter-grade">
+          <option value="">전체</option>
+          <option value="-"">-</option>
+          <option value="일반">일반</option>
+          <option value="매직">매직</option>
+          <option value="레어">레어</option>
+          <option value="에픽">에픽</option>
+          <option value="유니크">유니크</option>
+          <option value="레전드">레전드</option>
+          <option value="신화">신화</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>입수장소</label>
+        <select id="filter-source">
+          <option value="">전체</option>
+          <option value="상점">상점</option>
+          <option value="데이터상점">데이터상점</option>
+          <option value="일일상점">일일상점</option>
+          <option value="뽑기">뽑기</option>
+          <option value="던전">던전</option>
+          <option value="파티">파티</option>
+          <option value="PVP">PVP</option>
+          <option value="이벤트상점(상시)">이벤트상점(상시)</option>
+          <option value="미니게임">미니게임</option>
+          <option value="대죄의 문">대죄의 문</option>
+          <option value="동글 펫">동글 펫</option>
+          <option value="몬스터조건">몬스터조건</option>
+          <option value="길드상점">길드상점</option>
+          <option value="사막">사막</option>
+          <option value="동굴">동굴</option>
+          <option value="배틀로얄">배틀로얄</option>
+          <option value="시티샵">시티샵</option>
+          <option value="도감점수상점">도감점수상점</option>
+          <option value="백신장비 판매기계">백신장비 판매기계</option>
+          <option value="픽마장 상점">픽마장 상점</option>
+          <option value="하드던전">하드던전</option>
+          <option value="광산">광산</option>
+          <option value="쁘띠몬">쁘띠몬</option>
+          <option value="초월칩">초월칩</option>
+          <option value="과금">과금</option>
+          <option value="랭크상점">랭크상점</option>
+          <option value="랭크타워">랭크타워</option>
+          <option value="마일리지상점">마일리지상점</option>
+        </select>
+      </div>
+
+      <div class="filter-group hidden" id="filter-type-group">
+        <label>방식</label>
+        <select id="filter-type">
+          <option value="">전체</option>
+          <option value="드롭">드롭</option>
+          <option value="터치">터치</option>
+        </select>
+      </div>
+
+      <div class="filter-group hidden" id="filter-map-group">
+        <label>맵</label>
+        <select id="filter-map">
+          <option value="">전체</option>
+          <option value="숲">숲</option>
+          <option value="하늘">하늘</option>
+          <option value="연구소">연구소</option>
+          <option value="협곡">협곡</option>
+          <option value="네트워크">네트워크</option>
+          <option value="로얄베이스">로얄베이스</option>
+          <option value="화산">화산</option>
+          <option value="이그드라실의 방">이그드라실의 방</option>
+          <option value="깊은 숲">깊은 숲</option>
+          <option value="해변">해변</option>
+          <option value="용의 계곡">용의 계곡</option>
+          <option value="마계">마계</option>
+          <option value="마왕성">마왕성</option>
+          <option value="분화구">분화구</option>
+          <option value="카이저 연구소">카이저 연구소</option>
+          <option value="어둠">어둠</option>
+          <option value="시간의 동굴">시간의 동굴</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label>진화템</label>
+        <select id="filter-evoitem">
+          <option value="">전체</option>
+          <option value="O">O</option>
+          <option value="X">X</option>
+        </select>
+      </div>
+
+      <div class="filter-actions">
+        <button id="clear-filters" class="clear">모두 해제</button>
+        <button id="apply-filters" class="apply">적용</button>
+      </div>
+    </div>
+
+    <!-- 아이템 목록 -->
+    <section id="item-list" class="item-list"></section>
+  </main>
+
+  <!-- 아이템 상세 모달 -->
+  <div id="item-modal" class="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <img id="modal-img" alt="">
+        <h3 id="modal-name">아이템 이름</h3>
+        <p id="modal-grade" class="grade"></p>
+        <button id="close-item-modal" class="close-btn">닫기</button>
+      </div>
+      <div class="modal-body">
+        <p id="modal-desc" class="desc"></p>
+        <h4>획득 방법</h4>
+        <ul id="modal-obtain"></ul>
+        <h4>능력치</h4>
+        <div id="modal-stats" class="stats"></div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/global.js"></script>
+  <script src="/js/item.js"></script>
+</body>
+</html>

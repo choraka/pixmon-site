@@ -1,0 +1,18 @@
+{
+  "line": "몬",
+  "monsters": [
+    {
+      "id": "oooo-00",
+      "name": "몬",
+      "image": "mon/mon.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": [],
+      "next": [],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    }
+  ]
+}

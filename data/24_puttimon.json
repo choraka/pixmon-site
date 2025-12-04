@@ -1,0 +1,83 @@
+{
+  "line": "푸티몬",
+  "monsters": [
+    {
+      "id": "oooo-00",
+      "name": "푸티몬",
+      "image": "putttimon/puttimon.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": [],
+      "next": ["큐피몬"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "큐피몬",
+      "image": "putttimon/cupimon.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["푸티몬"],
+      "next": ["루체몬"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "루체몬",
+      "image": "putttimon/lucemon.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["큐피몬"],
+      "next": ["루체몬 폴다운 모드"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "루체몬 폴다운 모드",
+      "image": "putttimon/lucemon_fall.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["루체몬"],
+      "next": ["루체몬 사탄 모드", "루체몬X"],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "루체몬 사탄 모드",
+      "image": "putttimon/lucemon_satan.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["루체몬 폴다운 모드"],
+      "next": [],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    },
+    {
+      "id": "oooo-00",
+      "name": "루체몬X",
+      "image": "putttimon/lucemonx.png",
+      "attribute": "",
+      "color": "",
+      "stage": "",
+      "evolutionCondition": "",
+      "previous": ["루체몬 폴다운 모드"],
+      "next": [],
+      "stats": { "cost": "", "cooldown": "", "critical": "", "attack": "", "speed": "", "awakening": "", "transcendence": ""},
+      "awakeningLink" : "mon_akng.html"
+    }
+  ]
+}

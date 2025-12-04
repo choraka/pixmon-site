@@ -1,0 +1,124 @@
+[
+  {
+    "id": "item-black_egg",
+    "name": "검은 알",
+    "image": "item/black_egg.png",
+    "grade": "-",
+    "isEvolutionItem": "X",
+    "dropInfo": [
+      { "source": "상점" }
+    ],
+    "description": "유아기의 몬스터를 부화시킬 수 있는 몬스터의 알. \n 어떤 몬스터가 태어날지는 알 수 없다.",
+    "stats": {
+    },
+    "obtain": [
+      "상점에서 구매 가능 (10000G)"
+    ]
+  },
+  {
+    "id": "item-acient_spirit",
+    "name": "에이션트 스피릿",
+    "image": "item/acient_spirit.gif",
+    "grade": "-",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "동굴" }
+    ],
+    "description": "-",
+    "stats": {
+    },
+    "obtain": [
+      "동굴맵에서 제작 가능 (스피릿코드 100개)"
+    ]
+  },
+  {
+    "id": "item-drabraker",
+    "name": "드라 브레이커",
+    "image": "item/drabraker.png",
+    "grade": "-",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "시티샵" }
+    ],
+    "description": "용을 사냥하기 위해 만들어진 전설적인 파쇄검.",
+    "stats": {
+    },
+    "obtain": [
+      "시티샵에서 획득 가능"
+    ]
+  },
+  {
+    "id": "item-zcore",
+    "name": "Z코어",
+    "image": "item/zcore.png",
+    "grade": "-",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "이벤트상점(상시)" },
+      { "source": "랭크타워" }
+    ],
+    "description": "유아기의 몬스터를 부화시킬 수 있는 몬스터의 알. \n 어떤 몬스터가 태어날지는 알 수 없다.",
+    "stats": {
+    },
+    "obtain": [
+      "이벤트 코인 상점에서 구매 가능 (5000 이벤트 코인)",
+      "랭크타워 200층 보상으로 획득 가능"
+    ]
+  },
+  {
+    "id": "item-holyring",
+    "name": "신성한 반지",
+    "image": "item/holyring.png",
+    "grade": "유니크",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "던전", "map": "네트워크", "dropType": "드롭" },
+      { "source": "상점"},
+      { "source": "뽑기"}
+    ],
+    "description": "장착 시 총 공격력이 10, 체력이 70% 증가하는 유니크 장비",
+    "stats": { "총공격력": "10", "체력": "70%"
+    },
+    "obtain": [
+      "상점에서 구매 가능 (20Gem)",
+      "에픽뽑기에서 획득 가능",
+      "네트워크 던전 4에서 획득가능 [드롭몬스터 - 쿠라몬]"
+    ]
+  },
+  {
+    "id": "item-ironball",
+    "name": "쇠구슬",
+    "image": "item/ironball.png",
+    "grade": "레어",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "던전", "map": "연구소", "dropType": "드롭" },
+      { "source": "파티", "map": "시간의 동굴", "dropType": "드롭" }
+    ],
+    "description": "크기가 매우 작은 단단한 구슬. 레어 장비.",
+    "stats": {
+    },
+    "obtain": [
+      "연구소 던전 2에서 획득 가능 [드롭몬스터 - 메탈에테몬]",
+      "시간의 동굴 파티 1~8에서 획득 가능 [드롭몬스터 - 메탈에테몬]"
+    ]
+  },
+  {
+    "id": "item-viruschip",
+    "name": "바이러스 칩",
+    "image": "item/viruschip.png",
+    "grade": "에픽",
+    "isEvolutionItem": "O",
+    "dropInfo": [
+      { "source": "일일상점" },
+      { "source": "뽑기" }
+    ],
+    "description": "종족을 바이러스로 바꿔버리는 프로그램 칩. 에픽 장비.",
+    "stats": {
+    },
+    "obtain": [
+      "일일상점에서 구매 가능 (파티코인 2000개)",
+      "매직 장비 뽑기에서 획득 가능"
+    ]
+  }
+]
